@@ -14,17 +14,19 @@ console.log(user1["main Email"]);
 console.log(user1["lastLoginDays"]);
 
 user1.name = "the Adarsh maurya";
-// line 18 and 19 are used to change valuse of object
+        // line 18 and 19 are used to change valuse of object
 console.log(user1.name);
 user1["main Email"] = "adarsh.maurya@newdomain.com";
-// for not changaing the value inside theobject we have to freez the object
+        // for not changaing the value inside theobject we have to freez the object
 Object.freeze(user1);
 user1.age = 23; // this will not work because object is freezed
 console.log(user1.age);
 
-// to see all the keys in the object
+        // to see all the keys in the object
 console.log(Object.keys(user1));
-// to see all the values in the object
+        // to see all the values in the object
 console.log(Object.values(user1));
-// to see all the entries in the object
+        // to see all the entries in the object
 console.log(Object.entries(user1));
+
+
