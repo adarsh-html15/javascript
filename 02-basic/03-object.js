@@ -21,3 +21,10 @@ user1["main Email"] = "adarsh.maurya@newdomain.com";
 Object.freeze(user1);
 user1.age = 23; // this will not work because object is freezed
 console.log(user1.age);
+
+// to see all the keys in the object
+console.log(Object.keys(user1));
+// to see all the values in the object
+console.log(Object.values(user1));
+// to see all the entries in the object
+console.log(Object.entries(user1));
