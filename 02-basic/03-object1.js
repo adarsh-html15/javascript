@@ -9,3 +9,17 @@ user.greeting = function () {
 }
 
 console.log(user.greeting());
+const objectInObject = {
+  name: "Bob",
+  address: {
+    city: "New York",
+    zip: "10001",
+    phoneNo: {
+      first: 123456678,
+      second: 9876543210
+    }
+  },
+  collage: "meerut"
+}
+
+console.log(objectInObject.address.phoneNo.second);
