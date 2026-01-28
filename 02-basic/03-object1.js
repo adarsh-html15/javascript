@@ -23,3 +23,5 @@ const objectInObject = {
 }
 
 console.log(objectInObject.address.phoneNo.second);
+console.log(objectInObject['address']['phoneNo']['first']);   
+console.log(objectInObject.address.city);
