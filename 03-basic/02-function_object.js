@@ -12,6 +12,8 @@ function handlecart(obj) {
 }
 console.log(handlecart(user));
 
+console.log(handlecart({ name: "Adarsh", price: 200 }));
+
 function cart(...num) {
     return num; // rest operator which is used to collect all the arguments into an array
 }
