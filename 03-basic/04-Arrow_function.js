@@ -38,4 +38,4 @@ const impliciteReturn = (num1, num2) => num1 * num2;
 // no return needed for single expression, it will return the result of that expression
 console.log(impliciteReturn(5, 10));
 
-                                          
+                                            
