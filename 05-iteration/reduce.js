@@ -7,7 +7,7 @@ const newTotal = array1.reduce(function (accumulater, currval) {
     }, 0)
 console.log(newTotal);
 
- using arrow function
+//  using arrow function
 
 const nums = [1,2,3,4]
 
