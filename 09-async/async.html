@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Asynchronous JavaScript (async)</h1>
+
+    <section>
+        <p>Asynchronous programming allows JavaScript to perform long-running tasks (network requests, timers, file I/O) without blocking the main thread. This makes applications more responsive by handling work in the background and continuing execution when the result is ready.</p>
+    </section>
+
+    <section>
+        <h2>Callbacks</h2>
+        <p>Callbacks are functions passed as arguments that run after an asynchronous operation completes. They work but can lead to nested "callback hell" when chaining multiple async steps.</p>
+        <pre><code>// Example callback
+setTimeout(() =&gt; {
+  console.log('Done after 1 second');
+}, 1000);</code></pre>
+    </section>
+
+    <section>
+        <h2>Promises</h2>
+        <p>Promises represent a future value and make chaining asynchronous operations easier and more readable.</p>
+        <pre><code>// Example Promise
+fetch('/data.json')
+  .then(response =&gt; response.json())
+  .then(data =&gt; console.log(data))
+  .catch(err =&gt; console.error(err));</code></pre>
+    </section>
+
+    <section>
+        <h2>Async / Await</h2>
+        <p>Async/await is built on promises and provides a synchronous-looking syntax for asynchronous code, improving readability.</p>
+        <pre><code>// Example async/await
+async function loadData() {
+  try {
+    const response = await fetch('/data.json');
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+loadData();</code></pre>
+    </section>
+
+</body>
+</html>

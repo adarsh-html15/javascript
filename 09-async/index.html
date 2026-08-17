@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async project</title>
+</head>
+<body>
+    <h1>Adarsh with code</h1>
+    <button id="stop">stop</button>
+  <script>
+    // setTimeout(() => {
+    //     console.log("Adarsh");
+    // },2000);
+    
+    const sayAdarsh = ()=>{
+        console.log("Adarsh");
+    }
+const changeText = ()=>{
+        document.querySelector('h1').innerHTML = "Adarsh will be the best coder"
+}
+    setTimeout(sayAdarsh,2000)
+   const changeMe = setTimeout(changeText,2000);
+// we are taking reference change me to cleartimeout but fir fir settimeout work krega
+document.querySelector('#stop').addEventListener('click',()=>{
+    clearTimeout(changeMe)
+    console.log("STOPPED");
+    
+})
+  </script>
+</body>
+</html>
