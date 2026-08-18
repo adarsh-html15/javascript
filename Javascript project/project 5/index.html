@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color </title>
+    <style>
+        body{
+            color: #fff;
+            background-color: #414141;
+        }
+        div{
+            background-color: rgb(64, 50, 30);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            gap: 15px;
+        }
+        button{
+            font-size: 18px;
+            padding: 12px 24px;
+            border-radius: 6px;
+            transition: step-start;
+        }
+    </style>
+</head>
+<body>
+    <h2>Start should change the Background color every second</h2>
+    
+    <div>
+        <button id="start">Start</button>    
+        <button id="stop">Stop</button>    
+    </div>
+    <script src="color.js"></script>
+    </body>    
+</html>

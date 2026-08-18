@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Async project</title>
-</head>
-<body>
-    <h1>Adarsh with code</h1>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
-  <script>
-      
-    //   const sayDate = (str)=>{
-    //      console.log(str, Date.now);
-    //   }
-    //   const clear = setInterval(sayDate, 1000,"hi");
-    // clearInterval(clear) 
-// 
-   let work;
-  const logData = ()=>{
-     console.log("Adarsh",Date.now());
-  }
-  document.querySelector('#start').addEventListener('click',()=>{
 
-    work = setInterval(logData,1000)
-  });
-  document.querySelector('#stop').addEventListener('click',()=>{
-    clearInterval(work)
-  });
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async project</title>
+</head>
+
+<body>
+  <h1>Adarsh with code</h1>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+  <script>
+    ////////////////////////////////////////////////////////
+    //   const sayDate = (str)=>{                         //
+    //      console.log(str, Date.now);                   //
+    //   }                                                //
+    //   const clear = setInterval(sayDate, 1000,"hi");   //
+    // clearInterval(clear)                               //
+    ////////////////////////////////////////////////////////
+    let work;
+    const logData = () => {
+      console.log("Adarsh", Date.now());
+    }
+    document.querySelector('#start').addEventListener('click', () => {
+
+      work = setInterval(logData, 1000)
+    });
+    document.querySelector('#stop').addEventListener('click', () => {
+      clearInterval(work)
+    });
+
   </script>
 </body>
+
 </html>
